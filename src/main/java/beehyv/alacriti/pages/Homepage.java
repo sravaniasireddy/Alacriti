@@ -24,7 +24,34 @@ import org.testng.Assert;
 	 By filterOptions=By.tagName("label");
 	 By applyButton = By.xpath(".//*[@id='filter-modal']/div/div/div[2]/div[3]");
 	 By selectedFilter = By.xpath("html/body/div[1]/div/div/report-body/div/div[1]/div[1]/p[4]/span");
-	 
+	 By header = By.xpath(".//*[@class='piecharts']/h5/strong");
+	 By chartFilter = By.tagName("tspan");
+		
+		
+		
+		public void chartHeader(){
+			try{
+				List<WebElement> chartName = driver.findElements(header);
+				System.out.println(chartName.size());
+				for(WebElement chart:chartName){
+					System.out.println(chart.getText());
+				}
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+		}
+		
+		public void chartLegends(){
+			try{
+				List<WebElement> legendtName = driver.findElements(chartFilter);
+				System.out.println(legendtName.size());
+				for(WebElement legend:legendtName){
+					System.out.println(legend.getText());
+				}
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+		}
 	 public void acessingSite(){
 		 driver.get(URL);
 	 }

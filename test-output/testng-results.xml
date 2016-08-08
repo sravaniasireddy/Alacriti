@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="64576" started-at="2016-08-06T07:07:20Z" finished-at="2016-08-06T07:08:25Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="64576" started-at="2016-08-06T07:07:20Z" finished-at="2016-08-06T07:08:25Z">
+      <class name="beehyv.alacriti.tests.PieChartsDataTest">
+        <test-method status="PASS" signature="browser_launcher()[pri:0, instance:beehyv.alacriti.tests.PieChartsDataTest@78dbeeb]" name="browser_launcher" is-config="true" duration-ms="1425" started-at="2016-08-06T12:37:20Z" finished-at="2016-08-06T12:37:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser_launcher -->
+        <test-method status="PASS" signature="homepagetest()[pri:0, instance:beehyv.alacriti.tests.PieChartsDataTest@78dbeeb]" name="homepagetest" duration-ms="63055" started-at="2016-08-06T12:37:22Z" finished-at="2016-08-06T12:38:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepagetest -->
+        <test-method status="PASS" signature="browser_terminator()[pri:0, instance:beehyv.alacriti.tests.PieChartsDataTest@78dbeeb]" name="browser_terminator" is-config="true" duration-ms="74" started-at="2016-08-06T12:38:25Z" finished-at="2016-08-06T12:38:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser_terminator -->
+      </class> <!-- beehyv.alacriti.tests.PieChartsDataTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

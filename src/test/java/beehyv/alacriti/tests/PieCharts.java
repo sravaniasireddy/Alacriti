@@ -17,10 +17,6 @@ public class PieCharts extends Homepage{
       chartHeader();
       Thread.sleep(10000);
       chartLegends();
-      
-//	  homePage.reportSelection(driver);
-//	  System.out.println(homePage.pageHeader(driver));
-//	  Assert.assertEquals("Payments By Entry Date",homePage.pageHeader(driver) );
-//	 
+	 
   }
 }

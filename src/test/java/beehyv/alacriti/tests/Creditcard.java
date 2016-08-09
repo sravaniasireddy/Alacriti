@@ -20,7 +20,7 @@ public class Creditcard extends Homepage {
 		Thread.sleep(10000);
 		filters();
 		Thread.sleep(10000);
-		filterSelection("Bank");
+		filterSelection("Credit");
 		Assert.assertEquals(selectedFilterName(), "Credit");
 
 	}

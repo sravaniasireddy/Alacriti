@@ -20,7 +20,7 @@ public class AutoPay extends Homepage {
 		Thread.sleep(10000);
 		filters();
 		Thread.sleep(10000);
-		filterSelection("Bank");
+		filterSelection("Auto Pay");
 		Assert.assertEquals(selectedFilterName(), "Auto Pay");
 
 	}

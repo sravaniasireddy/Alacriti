@@ -20,7 +20,7 @@ public class DiscoverCard extends Homepage {
 		Thread.sleep(10000);
 		filters();
 		Thread.sleep(10000);
-		filterSelection("Bank");
+		filterSelection("Discover");
 		Assert.assertEquals(selectedFilterName(), "Discover");
 
 	}

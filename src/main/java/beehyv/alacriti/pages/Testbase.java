@@ -11,7 +11,8 @@ public class Testbase {
 	public WebDriver driver;
 	
 	
-	public String URL = "http://183.82.96.201:9000/#/report";
+//	public String URL = "http://183.82.96.201:9000/#/report";
+	public String URL = "http://192.168.2.111:9000/#/report";
 	private final Logger LOGGER = Logger.getLogger(Testbase.class.getName());
     
 	@AfterClass

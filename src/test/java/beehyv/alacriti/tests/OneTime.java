@@ -20,7 +20,7 @@ public class OneTime extends Homepage {
 		Thread.sleep(10000);
 		filters();
 		Thread.sleep(10000);
-		filterSelection("Bank");
+		filterSelection("One Time");
 		Assert.assertEquals(selectedFilterName(), "One Time");
 
 	}

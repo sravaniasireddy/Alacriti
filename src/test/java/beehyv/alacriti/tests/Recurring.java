@@ -20,7 +20,7 @@ public class Recurring extends Homepage {
 		Thread.sleep(10000);
 		filters();
 		Thread.sleep(10000);
-		filterSelection("Bank");
+		filterSelection("Recurring");
 		Assert.assertEquals(selectedFilterName(), "Recurring");
 
 	}

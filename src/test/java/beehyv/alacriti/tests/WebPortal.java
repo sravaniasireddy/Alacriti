@@ -20,7 +20,7 @@ public class WebPortal extends Homepage {
 		Thread.sleep(10000);
 		filters();
 		Thread.sleep(10000);
-		filterSelection("Simple Web");
+		filterSelection("Web Portal");
 		Assert.assertEquals(selectedFilterName(), "Web Portal");
 
 	}

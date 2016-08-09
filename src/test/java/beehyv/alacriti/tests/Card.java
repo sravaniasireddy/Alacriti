@@ -20,7 +20,7 @@ public class Card extends Homepage {
 		Thread.sleep(10000);
 		filters();
 		Thread.sleep(10000);
-		filterSelection("Bank");
+		filterSelection("Card");
 		Assert.assertEquals(selectedFilterName(), "Card");
 
 	}

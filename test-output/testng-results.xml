@@ -1,25 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="64576" started-at="2016-08-06T07:07:20Z" finished-at="2016-08-06T07:08:25Z">
+  <suite name="example suite 1" duration-ms="315150" started-at="2016-08-08T09:19:50Z" finished-at="2016-08-08T09:25:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="64576" started-at="2016-08-06T07:07:20Z" finished-at="2016-08-06T07:08:25Z">
-      <class name="beehyv.alacriti.tests.PieChartsDataTest">
-        <test-method status="PASS" signature="browser_launcher()[pri:0, instance:beehyv.alacriti.tests.PieChartsDataTest@78dbeeb]" name="browser_launcher" is-config="true" duration-ms="1425" started-at="2016-08-06T12:37:20Z" finished-at="2016-08-06T12:37:21Z">
+    <test name="Regression suite 1" duration-ms="315150" started-at="2016-08-08T09:19:50Z" finished-at="2016-08-08T09:25:05Z">
+      <class name="beehyv.alacriti.tests.AmexCard">
+        <test-method status="PASS" signature="browser_launcher()[pri:0, instance:beehyv.alacriti.tests.AmexCard@7d9e0228]" name="browser_launcher" is-config="true" duration-ms="1476" started-at="2016-08-08T14:49:50Z" finished-at="2016-08-08T14:49:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_launcher -->
-        <test-method status="PASS" signature="homepagetest()[pri:0, instance:beehyv.alacriti.tests.PieChartsDataTest@78dbeeb]" name="homepagetest" duration-ms="63055" started-at="2016-08-06T12:37:22Z" finished-at="2016-08-06T12:38:25Z">
+        <test-method status="FAIL" signature="test()[pri:0, instance:beehyv.alacriti.tests.AmexCard@7d9e0228]" name="test" duration-ms="103740" started-at="2016-08-08T14:49:51Z" finished-at="2016-08-08T14:51:35Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Amex] but found [Bank]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Amex] but found [Bank]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at beehyv.alacriti.tests.AmexCard.test(AmexCard.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homepagetest -->
-        <test-method status="PASS" signature="browser_terminator()[pri:0, instance:beehyv.alacriti.tests.PieChartsDataTest@78dbeeb]" name="browser_terminator" is-config="true" duration-ms="74" started-at="2016-08-06T12:38:25Z" finished-at="2016-08-06T12:38:25Z">
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="browser_terminator()[pri:0, instance:beehyv.alacriti.tests.AmexCard@7d9e0228]" name="browser_terminator" is-config="true" duration-ms="138" started-at="2016-08-08T14:51:35Z" finished-at="2016-08-08T14:51:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_terminator -->
-      </class> <!-- beehyv.alacriti.tests.PieChartsDataTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- beehyv.alacriti.tests.AmexCard -->
+      <class name="beehyv.alacriti.tests.AutoPay">
+        <test-method status="PASS" signature="browser_launcher()[pri:0, instance:beehyv.alacriti.tests.AutoPay@6dd603f5]" name="browser_launcher" is-config="true" duration-ms="1591" started-at="2016-08-08T14:51:35Z" finished-at="2016-08-08T14:51:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser_launcher -->
+        <test-method status="FAIL" signature="test()[pri:0, instance:beehyv.alacriti.tests.AutoPay@6dd603f5]" name="test" duration-ms="103581" started-at="2016-08-08T14:51:37Z" finished-at="2016-08-08T14:53:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Auto Pay] but found [Bank]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Auto Pay] but found [Bank]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at beehyv.alacriti.tests.AutoPay.test(AutoPay.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="browser_terminator()[pri:0, instance:beehyv.alacriti.tests.AutoPay@6dd603f5]" name="browser_terminator" is-config="true" duration-ms="70" started-at="2016-08-08T14:53:20Z" finished-at="2016-08-08T14:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser_terminator -->
+      </class> <!-- beehyv.alacriti.tests.AutoPay -->
+      <class name="beehyv.alacriti.tests.Bank">
+        <test-method status="PASS" signature="browser_launcher()[pri:0, instance:beehyv.alacriti.tests.Bank@5ed2b042]" name="browser_launcher" is-config="true" duration-ms="804" started-at="2016-08-08T14:53:20Z" finished-at="2016-08-08T14:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser_launcher -->
+        <test-method status="PASS" signature="test()[pri:0, instance:beehyv.alacriti.tests.Bank@5ed2b042]" name="test" duration-ms="103642" started-at="2016-08-08T14:53:21Z" finished-at="2016-08-08T14:55:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="browser_terminator()[pri:0, instance:beehyv.alacriti.tests.Bank@5ed2b042]" name="browser_terminator" is-config="true" duration-ms="70" started-at="2016-08-08T14:55:05Z" finished-at="2016-08-08T14:55:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser_terminator -->
+      </class> <!-- beehyv.alacriti.tests.Bank -->
+    </test> <!-- Regression suite 1 -->
+  </suite> <!-- example suite 1 -->
 </testng-results>

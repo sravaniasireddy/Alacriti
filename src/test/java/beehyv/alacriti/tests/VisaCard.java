@@ -20,7 +20,7 @@ public class VisaCard extends Homepage {
 		Thread.sleep(10000);
 		filters();
 		Thread.sleep(10000);
-		filterSelection("Bank");
+		filterSelection("Visa");
 		Assert.assertEquals(selectedFilterName(), "Visa");
 
 	}
